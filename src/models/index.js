@@ -1,6 +1,9 @@
 import { OpenAIProvider } from './openai.js';
 import { AnthropicProvider } from './anthropic.js';
 import { GeminiProvider } from './gemini.js';
+import { MistralProvider } from './mistral.js';
+import { DeepSeekProvider } from './deepseek.js';
+import { GroqProvider } from './groq.js';
 
 /**
  * Factory function to create provider instances
@@ -18,6 +21,12 @@ export function createProvider(providerName) {
       return new AnthropicProvider();
     case 'gemini':
       return new GeminiProvider();
+    case 'mistral':
+      return new MistralProvider();
+    case 'deepseek':
+      return new DeepSeekProvider();
+    case 'groq':
+      return new GroqProvider();
     default:
       throw new Error(`Unknown provider: ${providerName}`);
   }
@@ -28,7 +37,7 @@ export function createProvider(providerName) {
  * @returns {string[]} List of provider names
  */
 export function getSupportedProviders() {
-  return ['openai', 'anthropic', 'gemini'];
+  return ['openai', 'anthropic', 'gemini', 'mistral', 'deepseek', 'groq'];
 }
 
 /**

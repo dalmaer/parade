@@ -7,7 +7,7 @@ A pluggable, ESM-based Node.js CLI for inspecting AI model providers.
 * **Validate** a model identifier (`provider:modelName`) by pinging each provider's model endpoint.
 * **List** all available models (and metadata) for a given provider.
 
-Out of the box it includes support for **OpenAI**, **Anthropic**, and **Google Gemini**.
+Out of the box it includes support for **OpenAI**, **Anthropic**, **Google Gemini**, **Mistral**, **DeepSeek**, and **Groq**.
 
 ## Installation
 
@@ -57,6 +57,9 @@ Create a `.env` file in your project directory with the following API keys:
 OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 GEMINI_API_KEY=your_gemini_api_key
+MISTRAL_API_KEY=your_mistral_api_key
+DEEPSEEK_API_KEY=your_deepseek_api_key
+GROQ_API_KEY=your_groq_api_key
 ```
 
 The CLI will look for environment variables in the following order:
