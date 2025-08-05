@@ -13,7 +13,7 @@ Out of the box it includes support for **OpenAI**, **Anthropic**, **Google Gemin
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/parade.git
+git clone https://github.com/dalmaer/parade.git
 cd parade
 
 # Install dependencies
